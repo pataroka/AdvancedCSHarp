@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.BubbleSort", "01.BubbleSort\01.BubbleSort.csproj", "{5D6C5BA0-F4E9-4803-9C31-8927B8B3B110}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.JoinLists", "02.JoinLists\02.JoinLists.csproj", "{F1BA60A2-33F5-46B1-A2D1-D3249ACB31BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5D6C5BA0-F4E9-4803-9C31-8927B8B3B110}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D6C5BA0-F4E9-4803-9C31-8927B8B3B110}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D6C5BA0-F4E9-4803-9C31-8927B8B3B110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1BA60A2-33F5-46B1-A2D1-D3249ACB31BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1BA60A2-33F5-46B1-A2D1-D3249ACB31BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1BA60A2-33F5-46B1-A2D1-D3249ACB31BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1BA60A2-33F5-46B1-A2D1-D3249ACB31BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
