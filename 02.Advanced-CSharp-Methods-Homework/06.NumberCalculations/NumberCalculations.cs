@@ -10,26 +10,26 @@ namespace _06.NumberCalculations
     {
         static void Main(string[] args)
         {
-            int[] ints = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+            decimal[] decimals = Console.ReadLine().Split(' ').Select(decimal.Parse).ToArray();
             double[] doubles = Console.ReadLine().Split(' ').Select(double.Parse).ToArray();
 
-            Console.WriteLine(FindMinValue(ints));
+            Console.WriteLine(FindMinValue(decimals));
             Console.WriteLine(FindMinValue(doubles));
-            Console.WriteLine(FindMaxValue(ints));
+            Console.WriteLine(FindMaxValue(decimals));
             Console.WriteLine(FindMaxValue(doubles));
-            Console.WriteLine(FindAvgValue(ints));
+            Console.WriteLine(FindAvgValue(decimals));
             Console.WriteLine(FindAvgValue(doubles));
-            Console.WriteLine(FindSum(ints));
+            Console.WriteLine(FindSum(decimals));
             Console.WriteLine(FindSum(doubles));
-            Console.WriteLine(FindProduct(ints));
+            Console.WriteLine(FindProduct(decimals));
             Console.WriteLine(FindProduct(doubles));
         }
 
-        static int FindMinValue(int[] numbers)
+        static decimal FindMinValue(decimal[] numbers)
         {
-            int result = Int32.MaxValue;
+            decimal result = Decimal.MaxValue;
 
-            foreach (int n in numbers)
+            foreach (decimal n in numbers)
             {
                 result = (n < result) ? n : result;
             }
@@ -47,11 +47,11 @@ namespace _06.NumberCalculations
             return result;
         }
 
-        static int FindMaxValue(int[] numbers)
+        static decimal FindMaxValue(decimal[] numbers)
         {
-            int result = Int32.MinValue;
+            decimal result = Decimal.MinValue;
 
-            foreach (int n in numbers)
+            foreach (decimal n in numbers)
             {
                 result = (n > result) ? n : result;
             }
@@ -69,16 +69,16 @@ namespace _06.NumberCalculations
             return result;
         }
 
-        static int FindAvgValue(int[] numbers)
+        static decimal FindAvgValue(decimal[] numbers)
         {
-            long result = 0;
+            decimal result = 0;
 
-            foreach (int n in numbers)
+            foreach (decimal n in numbers)
             {
                 result += n;
             }
             result /= numbers.Length;
-            return (int)result;
+            return result;
         }
 
         static double FindAvgValue(double[] numbers)
@@ -93,11 +93,11 @@ namespace _06.NumberCalculations
             return result;
         }
 
-        static long FindSum(int[] numbers)
+        static decimal FindSum(decimal[] numbers)
         {
-            long result = 0;
+            decimal result = 0;
 
-            foreach (int n in numbers)
+            foreach (decimal n in numbers)
             {
                 result += n;
             }
@@ -115,11 +115,11 @@ namespace _06.NumberCalculations
             return result;
         }
 
-        static long FindProduct(int[] numbers)
+        static decimal FindProduct(decimal[] numbers)
         {
-            long result = 0;
+            decimal result = 1;
 
-            foreach (int n in numbers)
+            foreach (decimal n in numbers)
             {
                 result *= n;
             }
@@ -128,7 +128,7 @@ namespace _06.NumberCalculations
 
         static double FindProduct(double[] numbers)
         {
-            double result = 0;
+            double result = 1;
 
             foreach (double n in numbers)
             {
