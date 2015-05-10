@@ -29,14 +29,16 @@ namespace _09.TerroristsWin
                 Regex explosion = new Regex(@".{0," + bombPower + @"}?\|(.*?)\|.{0," + bombPower + "}");
                 Match explode = explosion.Match(input);
 
-                string bomb = "";
-                for (int i = 0; i < explode.Length; i++)
+                if (explode != Match.Empty)
                 {
-                    bomb += '.';
-                }
+                    string bomb = "";
+                    for (int i = 0; i < explode.Length; i++)
+                    {
+                        bomb += '.';
+                    }
 
-                input = input.Replace(explode.Value, bomb);
-                
+                    input = input.Replace(explode.Value, bomb);
+                }
 
                 match = match.NextMatch();
 
