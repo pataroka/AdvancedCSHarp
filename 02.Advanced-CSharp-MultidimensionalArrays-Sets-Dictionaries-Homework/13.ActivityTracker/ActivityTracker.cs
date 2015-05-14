@@ -12,7 +12,7 @@ namespace _13.ActivityTracker
     {
         static void Main(string[] args)
         {
-            Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("bg-BG");
+            Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
 
             int lines = int.Parse(Console.ReadLine());
             var months = new Dictionary<int, Dictionary<string, double>>();
