@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading;
-using System.Threading.Tasks;
+
 
 namespace _07.LettersChangeNumbers
 {
@@ -14,7 +9,7 @@ namespace _07.LettersChangeNumbers
         static void Main(string[] args)
         {
 
-            string[] input = Console.ReadLine().Trim().Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries);
+            string[] input = Console.ReadLine().Trim().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             decimal total = 0;
 
             foreach (string str in input)
