@@ -9,7 +9,7 @@ namespace _07.LettersChangeNumbers
     {
         static void Main(string[] args)
         {
-            string[] input = Regex.Split(Console.ReadLine(), @"\s+");
+            string[] input = Regex.Split(Console.ReadLine().Trim(), @"\s+");
             decimal total = 0;
 
             foreach (string str in input)
