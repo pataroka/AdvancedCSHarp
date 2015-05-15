@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 
 namespace _07.LettersChangeNumbers
@@ -8,8 +9,7 @@ namespace _07.LettersChangeNumbers
     {
         static void Main(string[] args)
         {
-
-            string[] input = Console.ReadLine().Trim().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] input = Regex.Split(Console.ReadLine(), @"\s+");
             decimal total = 0;
 
             foreach (string str in input)
