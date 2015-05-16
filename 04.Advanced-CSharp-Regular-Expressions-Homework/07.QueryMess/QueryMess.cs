@@ -12,7 +12,7 @@ namespace _07.QueryMess
         static void Main(string[] args)
         {
             string input = Console.ReadLine();
-            Regex rgx = new Regex(@"[\w\s]+=[\s\w\W][^&]+");
+            Regex rgx = new Regex(@"([^=&]+)=([^&]*)");
             string key = "";
             string value = "";
 
