@@ -13,20 +13,24 @@ namespace _06.Palindromes
         {
             string input = Console.ReadLine();
             SortedSet<string> result = new SortedSet<string>();
-            Regex rgx = new Regex(@"[A-Za-z]\w*");
-            Match match = rgx.Match(input);
+            StringBuilder sb = new StringBuilder();
 
-            while (match != Match.Empty)
+            for (int i = 0; i < input.Length; i++)
             {
-                string reverse = StringReverse(match.Value);
-                if (reverse == match.Value)
+                if ((input[i] != ' ') && (input[i] != ',') && (input[i] != '.')  && (input[i] != '!')  && (input[i] != '?'))
                 {
-                    result.Add(match.Value);
+                    sb.Append(input[i]);
                 }
-
-                match = match.NextMatch();
+                else
+                {
+                    string reverse = StringReverse(sb.ToString());
+                    if ((sb.ToString() == reverse) && (reverse != String.Empty))
+                    {
+                        result.Add(reverse);
+                    }
+                    sb.Clear();
+                }
             }
-
             Console.WriteLine(string.Join(", ", result));
         }
 
