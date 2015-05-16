@@ -12,12 +12,13 @@ namespace _07.QueryMess
         static void Main(string[] args)
         {
             string input = Console.ReadLine();
-            Regex rgx = new Regex(@"[\w\s%+]+=[\s\w\W][^&]+");
+            Regex rgx = new Regex(@"[\w\s]+=[\s\w\W][^&]+");
             string key = "";
             string value = "";
 
             while (input != "END")
             {
+                input = Regex.Replace(input, @".+?(?=\?)(\?)+", "+");
                 input = input.Replace("%20", " ");
                 input = input.Replace('+', ' ');
                 Match match = rgx.Match(input);
