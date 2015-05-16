@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.ExtractHyperlinks", "06.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.QueryMess", "07.QueryMess\07.QueryMess.csproj", "{0D86619B-161B-4ED5-9121-6EF98949592B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.UseYourChainsBuddy", "08.UseYourChainsBuddy\08.UseYourChainsBuddy.csproj", "{11C3DEE8-6E4D-4C5B-9466-C73AB228786E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.SemanticHTML", "09.SemanticHTML\09.SemanticHTML.csproj", "{07345020-E4E2-477C-BBC6-29355ADE8867}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{0D86619B-161B-4ED5-9121-6EF98949592B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D86619B-161B-4ED5-9121-6EF98949592B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D86619B-161B-4ED5-9121-6EF98949592B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11C3DEE8-6E4D-4C5B-9466-C73AB228786E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C3DEE8-6E4D-4C5B-9466-C73AB228786E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C3DEE8-6E4D-4C5B-9466-C73AB228786E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C3DEE8-6E4D-4C5B-9466-C73AB228786E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07345020-E4E2-477C-BBC6-29355ADE8867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07345020-E4E2-477C-BBC6-29355ADE8867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07345020-E4E2-477C-BBC6-29355ADE8867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07345020-E4E2-477C-BBC6-29355ADE8867}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
