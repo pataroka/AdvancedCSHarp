@@ -14,7 +14,7 @@ namespace _03.CountSubstringOccurrences
             string match = Console.ReadLine().ToLower();
             int count = 0;
 
-            for (int i = 0; i < input.Length - match.Length; i++)
+            for (int i = 0; i <= input.Length - match.Length; i++)
             {
                 if (match == input.Substring(i, match.Length))
                 {
