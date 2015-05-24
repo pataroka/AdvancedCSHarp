@@ -34,13 +34,11 @@ namespace _06.ZippingSlicedFiles
             {
                 long partSize = source.Length / parts;
                 long remainingSize = source.Length;
-                Regex rgx = new Regex(@"([\w\d\W]*)\\(?<=\\)([\w\d\W]*)(?=\.)\.(?<=\.)(\w+)");
-                Match match = rgx.Match(sourceFile);
 
                 for (int i = 0; i < parts; i++)
                 {
                     FileStream partFileStream;
-                    string outputPath = destinationDirectory + String.Format(@"Part-{0}", i) + ".gz";
+                    string outputPath = destinationDirectory + "\\" + String.Format(@"Part-{0}", i) + ".gz";
 
                     using (partFileStream = new FileStream(outputPath, FileMode.Create))
                     {

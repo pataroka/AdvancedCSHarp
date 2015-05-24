@@ -39,7 +39,7 @@ namespace _05.SlicingFile
                 for (int i = 0; i < parts; i++)
                 {
                     FileStream partFileStream;
-                    string outputPath = destinationDirectory + String.Format(@"Part-{0}", i) + "." + match.Groups[3];
+                    string outputPath = destinationDirectory + "\\" + String.Format(@"Part-{0}", i) + "." + match.Groups[3];
 
                     using (partFileStream = new FileStream(outputPath, FileMode.Create))
                     {
