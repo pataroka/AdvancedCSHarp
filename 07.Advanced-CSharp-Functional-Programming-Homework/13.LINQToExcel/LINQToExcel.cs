@@ -78,9 +78,6 @@ namespace _13.LINQToExcel
             }
 
             ws.Columns("A", "M").AdjustToContents();
-
-
-
             workbook.SaveAs("../../Output.xlsx");
         }
     }
