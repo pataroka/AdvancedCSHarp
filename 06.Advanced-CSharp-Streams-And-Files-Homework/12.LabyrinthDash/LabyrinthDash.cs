@@ -48,7 +48,7 @@ namespace _12.LabyrinthDash
                         break;
                 }
 
-                if ((labyrinth[y][x] == ' ') || (x >= labyrinth[y].Length) || (x < 0) || (y >= rows) || (y < 0))
+                if ((x >= labyrinth[y].Length) || (x < 0) || (y >= rows) || (y < 0) || (labyrinth[y][x] == ' '))
                 {
                     totalMoves++;
                     Console.WriteLine("Fell off a cliff! Game Over!");
