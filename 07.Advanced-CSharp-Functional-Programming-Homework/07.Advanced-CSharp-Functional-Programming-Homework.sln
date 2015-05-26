@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.UppercaseWords", "15.Upp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16.LittleJohn", "16.LittleJohn\16.LittleJohn.csproj", "{483F8F84-AA04-48EC-B31B-F3C0D3A8DC71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17.OfficeStuff", "17.OfficeStuff\17.OfficeStuff.csproj", "{56F31E1F-F79C-4808-91F1-5F5576FBEF5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{483F8F84-AA04-48EC-B31B-F3C0D3A8DC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{483F8F84-AA04-48EC-B31B-F3C0D3A8DC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{483F8F84-AA04-48EC-B31B-F3C0D3A8DC71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56F31E1F-F79C-4808-91F1-5F5576FBEF5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56F31E1F-F79C-4808-91F1-5F5576FBEF5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56F31E1F-F79C-4808-91F1-5F5576FBEF5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56F31E1F-F79C-4808-91F1-5F5576FBEF5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
