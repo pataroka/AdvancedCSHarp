@@ -33,7 +33,7 @@ namespace _14.TextGravity
                 for (int col = 0; col < matrix.GetLength(1); col++)
                 {
                     sb.Append("<td>");
-                    sb.Append(matrix[row, col]);
+                    sb.Append(SecurityElement.Escape(matrix[row, col].ToString()));
                     sb.Append("</td>");
                 }
                 sb.Append(row == matrix.GetLength(0) - 1 ? "</tr></table>" : "</tr>");
