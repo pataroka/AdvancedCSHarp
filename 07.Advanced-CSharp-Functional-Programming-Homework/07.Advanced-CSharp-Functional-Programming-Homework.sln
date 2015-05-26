@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.LINQToExcel", "13.LINQTo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.TextGravity", "14.TextGravity\14.TextGravity.csproj", "{8C1374DF-19C2-4CE7-8850-A1833E47E43E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.UppercaseWords", "15.UppercaseWords\15.UppercaseWords.csproj", "{F76B77BB-75C6-46B2-9C04-79AD79BC3347}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8C1374DF-19C2-4CE7-8850-A1833E47E43E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C1374DF-19C2-4CE7-8850-A1833E47E43E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C1374DF-19C2-4CE7-8850-A1833E47E43E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F76B77BB-75C6-46B2-9C04-79AD79BC3347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F76B77BB-75C6-46B2-9C04-79AD79BC3347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F76B77BB-75C6-46B2-9C04-79AD79BC3347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F76B77BB-75C6-46B2-9C04-79AD79BC3347}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
