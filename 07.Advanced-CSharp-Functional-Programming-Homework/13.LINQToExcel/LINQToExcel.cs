@@ -62,7 +62,13 @@ namespace _13.LINQToExcel
             ws.Cell("A1").Style.Alignment.Vertical = XLAlignmentVerticalValues.Center;
             ws.Range("A1:M2").Merge();
 
-            int row = 4;
+            
+            ws.Column(1).InsertColumnsBefore(1);
+            ws.Cell(4, 1).InsertData(query.AsEnumerable());
+            ws.Cell("N4").Value = ws.Range(ws.Cell("A4"), ws.Columns("A").CellsUsed().Last());
+            ws.Column(1).Delete();
+
+            /*int row = 4;
             int col = 1;
             foreach (var st in query)
             {
@@ -75,7 +81,7 @@ namespace _13.LINQToExcel
                 ws.Cell(row, col).Value = st.result;
                 col = 1;
                 row++;
-            }
+            }*/
 
             ws.Columns("A", "M").AdjustToContents();
             workbook.SaveAs("../../Output.xlsx");
